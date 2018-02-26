@@ -1,0 +1,13 @@
+beaver:
+    resource: "@BackendBundle/Resources/config/routing.yml"
+    prefix:   /backend
+
+index:
+    path: /
+    controller: App\Controller\PageController::home
+
+project:
+    path: /project/{id}
+    controller: App\Controller\PageController::project
+    options:
+        expose: true

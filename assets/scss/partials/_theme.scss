@@ -1,0 +1,33 @@
+nav#menu {
+  background: #f1c40f;
+}
+
+.mobile-menu {
+  background: #2c3e50;
+}
+
+/*html.fsvs #fsvs-pagination li.active > span > span,
+html.fsvs #fsvs-pagination li > span > span{
+	background: #e74c3c;
+}*/
+
+#home{
+  background-image: url(../images/backgrounds/mockup_1.jpg); background-size: cover;
+}
+
+.backgroundColor{ background: #2d2c41; position: absolute; width: 100vw; height: 100vh; top: 0px; left: 0px; z-index: 0; opacity: 0.88; }
+#aboutus .backgroundColor{ z-index: -1; }
+.separator{ background: #f2f2f2; bottom: -85px; width: 110vw; height: 100px; position: absolute; -ms-transform: rotate(-1.5deg); /* IE 9 */
+  -webkit-transform: rotate(-1.5deg); /* Chrome, Safari, Opera */
+  transform: rotate(-1.5deg); }
+.backlogo2{ background: #f1c40f; bottom: -5px; width: 110vw !important; height: 40px !important; position: absolute; -ms-transform: rotate(-2deg); /* IE 9 */
+  -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+  transform: rotate(-2deg) !important; z-index: -1; left: -10px;}
+
+#services{
+  background-image: url(../images/backgrounds/services.jpg); background-size: cover;
+}
+
+#aboutus{
+  background-image: url(../images/backgrounds/about.jpg); background-size: cover;
+}

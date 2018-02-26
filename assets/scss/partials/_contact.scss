@@ -1,0 +1,109 @@
+/***** CONTACT ******/
+#contact *{
+  transition-duration: .8s;
+  -webkit-transition-duration: .8s;
+  -moz-transition-duration: .8s;
+}
+
+#contact {
+  padding-top: 8vh;
+
+  form.dinamic{
+    position: relative;
+    margin: auto;
+    display: block;
+    overflow: auto;
+    padding-bottom: 10px;
+
+    input[type="text"],input[type="email"],textarea{
+      position: relative;
+      float: left;
+      width: 80%;
+      margin: 0px 10%;
+      font-weight: 300;
+      letter-spacing: 1px;
+      font-size: 1.5em;
+      padding-left: 10px;
+      color: #2c3e50;
+      padding-bottom: 0px;
+      border: none;
+      border-bottom: 1px solid #b7b7b7;
+      background: none;
+      box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      outline: none;
+    }
+
+    input[type="text"], input[type="email"]{ height: 2em; }
+    textarea{ font-size: 1em; height: 8em; }
+
+    input[type="text"]:valid, input[type="email"]:valid, textarea:valid{
+      margin-top: 6%; border-bottom: 2px solid #2ecc71;
+    }
+    input[type="text"]:invalid, input[type="email"]:invalid, textarea:invalid{
+      margin-top: 6%; border-bottom: 2px solid #e74c3c;
+    }
+
+    input[type="text"].empty, input[type="email"].empty, textarea.empty{
+      border-bottom: 1px solid #b7b7b7 !important;
+    }
+
+    input[type="text"].focus, input[type="email"].focus, textarea.focus{
+      margin-top: 6%; border-bottom: 2px solid #66CCFF;
+    }
+
+    textarea.focus{ font-size: 1em; }
+
+    input[type="text"].prepared, input[type="email"].prepared, textarea.prepared{
+      opacity: .3;
+      position: relative;
+      height: 1.5em;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin-top: 5%;
+    }
+
+    input[type="text"].hidden, input[type="email"].hidden, textarea.hidden{
+      opacity: 0;
+      position: relative;
+      height: 1.5em;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin-top: 0%;
+    }
+
+    input[type="submit"] {
+      border: 2px solid #66CCFF; text-align: center; background: #66CCFF;
+      padding-top: 10px; padding-bottom: 10px; margin-top: 5%;
+      color: #FFFFFF; cursor: pointer; float: right; margin-right: 8.5%;
+      letter-spacing: .2em; font-size: 1.2em; font-weight: 400;
+      -webkit-border-radius: 1px;
+      border-radius: 1px;
+      outline: none;
+      visibility: hidden;
+    }
+    input[type="submit"].hidden{ opacity: 0; margin-right: 50% !important; }
+    .form-message{
+      text-align: center;
+      font-weight: 300;
+      color: #0099CC ;
+      font-size: 24px;
+      display: none;
+      width: 90%;
+      margin: -80px 5% 40px 5%;
+    }
+  }
+
+  .contact_info{
+    position: relative; width: 100%; margin-top: 10vh;
+    h2{ font-weight: 900; font-size: 6vh; margin: 0; color: #2c3e50; margin-bottom: 1vh; margin-top: 5vh;}
+    a{ color: #2c3e50; text-decoration: none; outline: none; font-size: 4vh;  }
+    ul{
+      list-style: none; margin: 5vh 0; padding: 0 !important;
+      li{ width: 100%; display: block; margin-bottom: 5px; padding: 0; }
+      li a:before{ padding: 0; font-size: 4vh;margin: 0 15px 0 0; color: #0099CC; }
+      li a.flaticon-whatsapp:before{ color: #16a085; }
+    }
+  }
+}

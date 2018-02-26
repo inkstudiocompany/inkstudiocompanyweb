@@ -1,0 +1,28 @@
+/***************************************************************************
+ * Este es el framework de Ink Studio - Resposive Web Design
+ *
+ * Este framework se basa en el framework 960 grid
+ *
+ * @autor: Leonardo Julián Suárez Amézquita
+ * @web: http://www.inkstudio.com.co
+ * 2013
+ ***************************************************************************/
+
+/**
+    Desktop 12 Columnas
+    Tablets 8 Columnas
+    Mobile 4 Columnas
+**/
+html, body{
+  position: relative;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #f2f2f2;
+}
+
+@import "partials/normalize";
+@import "partials/grid";
+@import "partials/desktop";
+@import "partials/tablet";
+@import "partials/mobile";

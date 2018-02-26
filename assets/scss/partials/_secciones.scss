@@ -1,0 +1,160 @@
+#project {
+  height: auto;
+  .backgroundColor{
+    padding-bottom: 9vh;
+  }
+  .project-wrapper{
+    width: 100vw;
+    height: 78vh;
+    margin: 0vh auto;
+    padding-top: 15vh;
+    padding-bottom: 16vh;
+    background: url(../images/backgrounds/services.jpg);
+    background-size: cover;
+
+    .header{
+      position: relative;
+      width: 80vw;
+      height: 94vh;
+      margin: 0vh auto;
+      padding: 0;
+      z-index: 1;
+      overflow: hidden;
+
+      h2{
+        color: #ffffff;
+        font-size: 2em;
+        font-weight: 400;
+        height: 7vh;
+        text-align: center;
+        letter-spacing: 3px;
+        margin: 4vh 0 0 0;
+      }
+      h3{
+        margin: 0;
+        color: #FFF;
+        text-align: center;
+        margin-bottom: 4vh;
+        a{
+          margin: 0 auto;
+          color: #bbbccc;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .keywords{
+      text-align: center;
+      margin-bottom: 5vh;
+      height: 4vh;
+
+      strong{
+        color: #f1c40f;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+        text-align: center;
+      }
+      strong:after{
+        content: "/";
+        margin: 0 10px;
+      }
+      strong:last-child:after{
+        content: "";
+      }
+
+      .image{
+        position: relative;
+        border: 20px solid #acacac;
+        border-bottom: none;
+        width: 60%;
+        height: 67vh;
+        margin: 0 auto;
+        -webkit-border-radius: 20px 20px 0 0;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 10px 1px #000;
+        box-shadow: 0px 0px 10px 1px #000;
+      }
+    }
+  }
+
+  .body{
+    position: relative;
+    width: 100vw;
+    padding-top: 0vh;
+    margin: 0vh auto;
+    padding: 0;
+    height: 30vh;
+
+    .separator{
+      z-index: 1;
+      top: -18px;
+      height: 40px;
+      -webkit-box-shadow: -1px -1px 3px 0 #000000;
+      box-shadow: 0 -2px 1px 0 #000;
+    }
+  }
+}
+
+
+/** ERROR PAGE **/
+.message-404{
+  margin-top: 10vh;
+  text-align: center;
+
+  .error-container{
+    background: #2d2c41;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    opacity: 0.9;
+  }
+
+  h1{
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 4vmax;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.1em;
+  }
+
+  .error-container{
+    img{
+      width: 40%;
+      margin: 2vh 0% 0 0%;
+      float: left;
+    }
+    h2{ color: #f1c40f;
+      text-align: center;
+      font-size: 20vmax;
+      font-weight: 300; margin: 5vh 0 0 0; letter-spacing: 0.1em;
+    }
+  }
+
+  p{
+    width: 100%;
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 10vh;
+  }
+
+  a{
+    border: 1px solid #FFF;
+    text-align: center;
+    padding: 10px 20px 10px 15px;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: .2em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    position: relative;
+  }
+}

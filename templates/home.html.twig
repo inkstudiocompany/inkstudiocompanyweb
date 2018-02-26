@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div id="socialVisor"><label></label></div>
+    <div class="content-full socialbar grid_5 no-mobile no-tablet">
+        <ul>
+            <li>
+                <a href="http://www.facebook.com/inkstudiocompany" rel="facebook" target="_blank" class="glyph-icon flaticon-facebook29" title="hazte fan en facebook">&nbsp;</a>
+            </li>
+            <li>
+                <a href="http://instagram.com/inkstudiocompany" target="_blank"
+                   class="glyph-icon flaticon-socialmedia11" rel="instagram" title="siguenos en instagram">&nbsp;</a>
+            </li>
+            <li>
+                <a href="http://www.twitter.com/inkstudioco" target="_blank" rel="twitter" class="glyph-icon flaticon-twitter1" title="siguenos en twitter">&nbsp;</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        {% include 'partials/head.html.twig' %}
+
+        <div id="fsvs-body">
+            <div class="section" id="welcome">
+                {% include 'partials/welcome.html.twig' %}
+            </div>
+
+            <div class="section" id="home">
+                <div class="backgroundColor"></div>
+                {% include 'partials/banners.html.twig' %}
+                <div class="separator"></div>
+            </div>
+
+            <div class="section" id="works">
+                {% include 'partials/works.html.twig' %}
+            </div>
+
+            <div class="section" id="services">
+                <div class="backgroundColor"></div>
+                {% include 'partials/services.html.twig' %}
+                <div class="separator"></div>
+            </div>
+
+            <div class="section" id="customers">
+                {% include 'partials/customers.html.twig' %}
+            </div>
+
+            <div class="section" id="aboutus">
+                <div class="backgroundColor"></div>
+                {% include 'partials/aboutus.html.twig' %}
+                <div class="separator"></div>
+            </div>
+
+            <div class="section" id="contact">
+                {% include 'partials/contact.html.twig' %}
+            </div>
+        </div>
+    </div>
+
+    <div class="modalWindow animated" id="modalWindow">
+
+        <div class="wrapperModalWindow">
+            <div class="backgroundColor"></div>
+            <a href="javascript:modalOut()" id="closeButton">
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="content animated">
+            </div>
+        </div>
+    </div>
+{% endblock body %}

@@ -1,0 +1,47 @@
+<div class="r-content content-fluid">
+    <div class="title">
+        <h2 class="grid_12 no-spaces animated">Portfolio</h2>
+        <span class="grid_12 no-spaces">
+            Queremos presentarte algunas experiencias realizadas
+        </span>
+    </div>
+
+    <div class="grid_12 t_grid_8">
+        <div class="project-carrusel grid_12 t_grid_8 content-full no-spaces">
+
+            <div class="project">
+                <a href="javascript:portfolioButton('prev', true)" rel="nofollow" class="leftRow animated flaticon-arrow395"></a>
+                <div class="project-wrapper animated">
+                    {% if portfolio is not empty %}
+                        {% for key, project in portfolio %}
+                            <a href="javascript:loadProject({{ key }}, 'Left');" title="{{ project['nombre'] }}" class="item animated bounceInDown">
+                            <div class="zoom">
+                                <img src="{{ asset('images/look12.svg') }}" alt="ver detalles del website" />
+                            </div>
+                            <img src="{{ project['imagen'] }}" alt="{{ project['texto_alternativo'] }}" />
+                            <h4>{{ project['nombre'] }}</h4>
+                            </a>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <a href="javascript:portfolioButton('next', true)" rel="nofollow" class="rightRow animated flaticon-move13"></a>
+            </div>
+
+
+            <div class="grid_12 t_grid_8">
+                <ul class="carrusel-controls animated">
+                    {% if portfolio is not empty %}
+                        {% for project in portfolio %}
+                            {% set class = '' %}
+                            {% if loop.index == 0 %}
+                                {% set class = 'active' %}
+                            {% endif %}
+                            <li>
+                                <a href="javascript:portfolioButton({{ loop.index }}, false)" class="{{ class }}"></a></li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

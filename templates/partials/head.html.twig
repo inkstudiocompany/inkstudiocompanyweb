@@ -1,0 +1,57 @@
+<nav class="animated" id="menu">
+    <div class="backlogo"></div>
+    <div class="backlogo2"></div>
+    <a href="#home" title="Ink Studio, Buenos Aires - Argentina, Bogotá, Tunja - Colombia, Diseño y Desarrollo Web, Optimización SEO" class="logotipo">
+        <img src="{{ asset('images/isotipo.png') }}" alt="Logotipo Ink Studio Company" />
+    </a>
+    <div class="r-content no-mobile no-tablet">
+        <a href="#contact">CONTACTO</a>
+        <a href="#aboutus">ACERCA DE</a>
+        <a href="#customers">CLIENTES</a>
+        <a href="#services">SERVICIOS</a>
+        <a href="#works">PORTFOLIO</a>
+    </div>
+    <button class="glyph-icon flaticon-menu55 no-desktop menuOpen" onclick="menuIn()"></button>
+</nav>
+
+<div class="mobile-menu no-destop">
+    <button class="glyph-icon flaticon-cross37 animated" id="menuClose" onclick="menuOut()"></button>
+    <a href="#home" class="homeMobile" onclick="menuOut()">
+        <img src="{{ asset('images/isotipo.png') }}" alt="Logotipo Ink Studio Company" />
+    </a>
+    <a href="#works" class="menu-item" onclick="menuOut()">
+        PORTFOLIO
+    </a>
+    <a href="#services" class="menu-item" onclick="menuOut()">
+        SERVICIOS
+    </a>
+    <a href="#customers" class="menu-item" onclick="menuOut()">
+        CLIENTES
+    </a>
+    <a href="#aboutus" class="menu-item" onclick="menuOut()">
+        ACERCA DE
+    </a>
+    <a href="#contact" class="menu-item" onclick="menuOut()">
+        CONTACTO
+    </a>
+
+    <div class="phones">
+        <a href="skype:leonardo.suarez83?call" target="_blank" class="flaticon-chat23">leonardosuarez.83</a>
+        <a href="#none" class="flaticon-whatsapp">+54 9 11-30361238</a>
+    </div>
+
+
+    <ul class="social">
+        <li>
+            <a href="https://www.facebook.com/inkstudiocompany" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://instagram.com/inkstudiocompany" target="_blank" class="flaticon-socialmedia11"></a>
+        </li>
+        <li>
+            <a href="http://www.twitter.com/inkstudiocompany" target="_blank" class="flaticon-twitter1"></a>
+        </li>
+    </ul>
+</div>

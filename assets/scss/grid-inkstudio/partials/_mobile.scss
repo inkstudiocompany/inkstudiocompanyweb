@@ -1,0 +1,149 @@
+/********* CUSTOMIZE YOU STYLESHEET FOR MOBILE DEVICES *************/
+@media screen And (max-width: 38em) {
+  html, body{ font-size: 12px; }
+
+  .section#welcome .r-content {
+    margin-top: 0px !important;
+  }
+  .section .r-content {
+    margin-top: 65px !important;
+  }
+
+  /*** GLOBALS **/
+  .title { margin: 10vh 0 1vh 0 !important; }
+  .title span { font-size: 0.9em !important; padding-top: 0px !important; }
+  .title h2 {
+    margin: 3vh 0 0 0;
+    padding: 0px;
+    font-size: 5vh !important;
+    line-height: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /*** WELCOME ***/
+  #welcome .logotipo { height: 75vh !important; margin-bottom: 3vh; }
+  #welcome .logotipo img { height: auto !important; }
+
+  /*** HOME ***/
+  .slider { height: 80vh !important; }
+  .imageSlider{ height: 50% !important; }
+  .textSlider{ height: 30% !important; text-align: center; }
+  .textSlider label{ padding: 0px !important; margin-left: 5%; font-size: 6vh !important; }
+  .textSlider label span{ font-size: 7vh !important; }
+  .slider .item a { font-size: 1.2em !important; margin-top: 3vh !important; }
+  .imageSlider img.special{ margin-bottom: -7vh !important; max-height: 120% !important; left: 7%; }
+
+  .project-carrusel .project{ height: 100% !important; }
+  .project-carrusel .project .project-wrapper{ width: 100% !important; height: 70% !important; }
+  .project-carrusel .project .leftRow,
+  .project-carrusel .project .rightRow{ height: 20vh !important; padding: 0px !important; margin: 0px !important; top: 51vh !important; }
+  .project-carrusel .project .rightRow{ right: 0px !important; text-align: right;  }
+  .project-carrusel .project .leftRow{ text-align: left !important; left: 0px !important; }
+  .project-carrusel .project .leftRow:before, .rightRow:before{ line-height: 12vh !important; margin: 0px !important; font-size: 15vw !important; text-align: center !important; margin-left: -2vh !important;}
+  .project-carrusel .carrusel-controls{ margin-top: -26vh !important; width: 98% !important; }
+  .modalWindow .wrapperModalWindow .content #project .project-wrapper{ width: 100% !important; padding: 0 !important; height: 76vh !important; margin-top: 0vh !important;}
+  .modalWindow .wrapperModalWindow .content #project .project-wrapper .header{ height: 61vh !important; margin-bottom: 4vh; }
+  .modalWindow .wrapperModalWindow .content #project .project-wrapper .header h2{ margin: 0 !important; font-size: 6vw !important; height: auto !important; width: 100% !important; }
+  .modalWindow .wrapperModalWindow .content #project .project-wrapper .header .keywords{ margin-bottom: 0 !important; height: auto !important; font-size: 5vw !important; }
+  .modalWindow .wrapperModalWindow .content #project .project-wrapper .image,
+  .modalWindow .wrapperModalWindow .content #project .project-wrapper .description{ width: 100% !important; margin: 20px 0 0 0 !important; text-align: center; height: 40vh !important; }
+  .modalWindow .wrapperModalWindow .content #project .project-wrapper .description p{ font-size: 4vw !important; }
+  .modalWindow .wrapperModalWindow .content #project .project-wrapper .image{ height: 33vh !important; }
+  .modalWindow .wrapperModalWindow .content #project .project-wrapper .image img{ width: 96% !important; }
+
+
+  .servicesWrapper{ width: 92vw; height: 75vh; margin: 0px; padding: 0px; overflow: hidden;}
+  .service_carrusel{ position: relative; height: 65vh; margin: 0px; padding: 0px; }
+  .service_carrusel li{ position: relative; height: 80%; width: 86vw !important; margin: 0px; padding: 2vh 3vw; }
+  .servicesWrapper ul.paginador{ position: absolute; width: 64px; margin: 0px; padding: 0px; list-style: none; bottom: 20px; right: 20px; }
+  .servicesWrapper ul.paginador li{ width: 6px; height: 6px; background: #ffffff; float: left; margin: 0px 5px; -webkit-border-radius: 50%; border-radius: 50%; opacity: .4;}
+  .servicesWrapper ul.paginador li.active{ background: #FFFFFF; opacity: 1; }
+  .glide__slide{ visibility: hidden !important; }
+  .glide__slide.active{ visibility: visible !important; }
+
+  #aboutus .title h1 { font-size: 8vw !important; }
+  #aboutus .title h2 { color: #FFFFFF; }
+  #aboutus .iam { margin-bottom: 2vh !important; }
+  #aboutus p{
+    font-size: 3.3vh !important;
+    width: 100% !important;
+    margin: 1em auto 0 auto;
+    font-weight: 300 !important;
+  }
+
+  form.dinamic input[type="text"],
+  form.dinamic input[type="email"],
+  form.dinamic textarea{
+    height: 5vh !important;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 4vh !important;
+    line-height: 3.5vh;
+  }
+  form.dinamic textarea{ height: 15vh !important; }
+  form.dinamic input[type="submit"]{ margin-top: 2% !important; }
+  .contact_info{ text-align: center; margin-top: 1vh !important; }
+  .contact_info h2{ font-weight: 700 !important; font-size: 4vh !important; margin: 0vh !important;}
+  .contact_info a{ font-size: 3vh !important; margin-bottom: -1vh !important; }
+  .contact_info ul{ margin: 1vh 0 !important; }
+  #contact .contact_info ul li { float: left !important; width: 50% !important; }
+
+
+  nav#menu{ height: 60px !important; paddin: 0px !important; }
+  nav#menu .logotipo{ height: 120% !important; top: 3px !important;}
+  nav#menu .backlogo{ top: -8px !important; left: 3.4vw !important; width: 70px !important; height: 70px !important;}
+  #welcome .navbar{ margin: 0px; padding: 0px; width: 100%; height: 60px !important; display: block; }
+
+  #customers .customer .opinion img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 30px;
+    margin-left: 5px;
+  }
+  #customers .customer .opinion p{ font-size: 1.4em !important; width: 95% !important; margin: auto; text-align: center; }
+
+  .separator{ bottom: -96px !important; }
+
+  .section.interior#project .project-wrapper{ height: 360px !important; overflow: hidden; padding: 100px 0 90px 0; }
+  .section.interior .project-wrapper .header{ height: 463px !important; bottom: 0 !important; width: 100vw !important; }
+  .section.interior .project-wrapper .backgroundColor{ height: 550px !important; padding: 0 !important; }
+  .section.interior#project .project-wrapper .image{ height: 290px; width: 92%; bottom: 0; position: absolute; left: 1.3%; border-width: 10px !important;}
+
+
+  /** ERROR PAGE **/
+  .message-404{
+    margin-top: 5vh !important;
+  }
+  .message-404 .error-container img{
+    width: 60% !important;
+    margin: 0 20% 0 20% !important;
+    font-weight: 100 !important;
+  }
+  .message-404 .error-container h2{
+    margin: 0vh 0 0 0!important;
+    gont-weight: 100 !important;
+  }
+  .message-404 p{
+    font-weight: 300 !important;
+    font-size: 1.2em !important;
+  }
+
+
+
+  @media all and (orientation:landscape) {
+    /** Custom Code **/
+
+  }
+
+  @media all and (orientation:portrait) {
+    /** Custom Code **/
+
+
+
+
+
+
+  }
+}

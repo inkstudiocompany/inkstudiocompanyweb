@@ -1,0 +1,26 @@
+<div class="section" id="project">
+    <div class="project-wrapper" itemscope itemtype="http://schema.org/WebSite">
+        <div class="header">
+            <meta itemprop="url" content="http://www.example.com/"/>
+            <h2>{{ project['nombre'] }}</h2>
+            <h3>
+                <a href="{{ project['web'] }}" title="{{ project['nombre'] }}" target="_blank">
+                {{ project['web'] | replace({ 'http://': '', 'https://': '' }) }}
+                </a>
+            </h3>
+
+            <div class="keywords">
+                {% for keyword in project['keywords'] %}
+                    <strong>{{ keyword }}</strong>
+                {% endfor %}
+            </div>
+
+            <div class="image">
+                <img src="{{ project['imagen'] }}" alt="{{ project['nombre'] }}" />
+            </div>
+
+            <div class="description">{{ project['descripcion'] | raw }}</div>
+        </div>
+        <a href="{{ project['web'] }}" title="{{ project['nombre'] }}" class="button" target="_blank">WEB</a>
+    </div>
+</div>

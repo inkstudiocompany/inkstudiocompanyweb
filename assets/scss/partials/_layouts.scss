@@ -1,0 +1,24 @@
+.section{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  float: left;
+  background: #f2f2f2;
+
+}
+
+.section .r-content{ margin-top: 12vh;  height: 84vh; }
+
+ul.navbar-bullets{
+  position: fixed;
+  margin-top: 200px;
+  right: 20px;
+  top: 0px;
+  z-index: 1;
+  height: 100%;
+}
+
+.container{ position: absolute; z-index: 1; }

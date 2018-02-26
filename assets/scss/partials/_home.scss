@@ -1,0 +1,183 @@
+/************ HOME ********/
+#welcome {
+  background: url(../images/backgrounds/people.jpg) 0%;
+  background-size: cover;
+
+  .r-content{ margin-top: 0; height: 100vh; }
+
+  #video-background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+
+  video{
+    position: fixed; right: 0; bottom: 0;
+    width: vw; height: vh;
+    z-index: 0;
+  }
+
+  .logotipo{
+    height: 80vh; margin-top: 0%; z-index: 1;
+    img{ position: relative; display: block; margin: auto; height: 100%;  }
+  }
+
+  .navbar{
+    list-style: none; z-index: 1; padding: 0px;
+
+    a{
+      float: left;
+      width: 20%;
+      text-align: center;
+      display: block;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-size: 1.3em;
+      letter-spacing: 0.1em;
+      padding-top: 25px;
+    }
+  }
+
+  .start{
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    left: 0px;
+    z-index: 1;
+    font-size: 30px;
+    bottom: 3vh;
+    padding-top: 3vh;
+    margin-left: -10px;
+    text-decoration: none;
+  }
+
+  .start:before{ font-size: 6vh; }
+}
+
+
+/************ HOME ********/
+#home {
+  .imageSlider, .textSlider{
+    height: 60vh; margin-top: 0%; position: relative;
+    .animated{ visibility: hidden; }
+  }
+  .imageSlider img{ position: absolute; bottom: 0; width: 90%; margin-left: 10%; }
+  .textSlider {
+    label{ position: absolute; vertical-align: bottom; color: #FFFFFF; bottom: 0; font-size: 5vmax; font-weight: 900; padding-right: 5%; width: 95% !important; display: block; }
+    span{ vertical-align: bottom; bottom: 0; font-size: 6vmax; font-weight: 900; }
+  }
+  .slider .item{
+    position: absolute;
+    height: 80vh;
+    a{
+      border: 1px solid #FFF; text-align: center;
+      padding-top: 10px; padding-bottom: 10px; margin-top: 11vh;
+      color: #FFF; cursor: pointer; z-index: 99; text-decoration: none;
+      letter-spacing: .2em; font-size: 1.3em;
+      text-transform: uppercase;
+    }
+    a:hover{ background: #FFF; color: #66CCFF; }
+  }
+
+  .slidetext {
+    label{
+      font-weight: 300; line-height: 105%; font-size: 400%; width: 90%; display: block;
+      span { font-weight: 900; font-size: 102%; }
+    }
+  }
+}
+
+/************ WORKS ********/
+#works {
+  .project-carrusel {
+    position: relative; height: 70vh; display: block;
+
+    .rightRow.flaticon-move13:before,
+    .leftRow.flaticon-arrow395:before{ font-size: 5em; color: #66ccff; }
+
+    .project{
+      position: relative; height: 78%; min-height: 300px; max-height: 87vmax;
+
+      .project-wrapper{
+        position: relative; width: 60%; margin: auto; height: 100%; overflow: hidden; -webkit-box-shadow: 1px 1px 1px 1px #939393; box-shadow: 1px 1px 1px 1px #939393;
+        h4{ position: absolute; z-index: 2; background: $bgColor; bottom: -22px; height: 14%; width: 90%; padding: 3% 5% 0 5%; font-weight: 700; color: #2c3e50; }
+        a{
+          height: 100%;
+          img{ position: absolute; width: 100%; }
+        }
+
+        .zoom{
+          position: absolute; width: 100px; height: 100px; -webkit-border-radius: 50%; border-radius: 50%; margin: 20% 45%; background: #333; opacity: .8; display: block; visibility: hidden; z-index: 99;
+          img{ fill: #fff !important; stroke: #FFF; margin: 0 10%; padding-top: 10%; width: 80%; height: 80%; }
+        }
+      }
+
+      .project-wrapper:hover{
+        cursor: pointer;
+        img{ -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+        .zoom{ visibility: visible; }
+      }
+
+      .leftRow, .rightRow{ position: absolute; width: 10%; height: 100%; padding: 0px; padding-top: 0px; top: 0px; display: block; text-decoration: none; }
+      .leftRow{ left: 5%; }
+      .rightRow{ right: 5%; }
+      .leftRow:before, .rightRow:before{ line-height: 55vh; }
+    }
+    div .carrusel-controls{
+      width: 60%; margin: auto;  padding: 0px; margin-top: 20px; list-style: none;
+      li{
+        margin: 0px; width: 10px; height: 10px; margin-left: 2%; float: right;
+        a{ width: 100%; height: 10px; background: #BBBBBB; display: block; -webkit-border-radius: 5px; border-radius: 5px; }
+        a:hover{ background: #2ecc71; height: 10px; }
+        a.active{ background: #66ccff; height: 10px; }
+      }
+      li:last-child{ margin-right: 0px; }
+    }
+  }
+}
+
+/***** CUSTOMERS *****/
+#customers {
+  ul{
+    list-style: none; overflow: auto; padding: 0px;
+    li{
+      float: left; display: block; border: none; margin-bottom: 10px;
+      img{  -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+    }
+  }
+}
+
+/************ ABOUTUS ********/
+#aboutus {
+  h1 { color: #FFFFFF; font-size: 3em; font-weight: 400; }
+  .title h2 { margin-bottom: 0px; color: #FFFFFF; }
+  .iam{ width: 25vh; height: 25vh; -webkit-border-radius: 50%;
+    border-radius: 50%; overflow: hidden; border: 3px solid #fff; margin: auto; margin-bottom: 5vh; }
+  p{ text-align: center; font-size: 3.1vh; color: #FFFFFF; font-weight: 300; }
+}
+
+
+/************ SERVICES ********/
+#services {
+  .title{
+    h2 { color: #FFFFFF; }
+  }
+
+  h3{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4em;
+    height: 2.5em;
+    margin-bottom: 2em;
+    font-weight: 300;
+    border-bottom: 1px groove #f1c40f;
+  }
+
+  p{ color: #ffffff; font-size: 1em; text-align: left; line-height: 1.3em; }
+}
+

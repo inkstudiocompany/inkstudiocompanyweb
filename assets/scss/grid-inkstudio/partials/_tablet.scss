@@ -1,0 +1,85 @@
+
+/********* CUSTOMIZE YOU STYLESHEET FOR TABLET DEVICES *************/
+@media screen And (min-width : 38.001em) And (max-width : 68em){
+  .section.interior#project .project-wrapper{ height: 360px !important; overflow: hidden; padding: 100px 0 90px 0; }
+  .section.interior .project-wrapper .header{ height: 463px !important; bottom: 0 !important; }
+  .section.interior .project-wrapper .backgroundColor{ height: 550px !important; padding: 0 !important; }
+  .section.interior#project .project-wrapper .image{ height: 290px; width: 92%; bottom: 0; position: absolute; left: 1.3%; }
+
+  .section .r-content{ margin-top: 70px !important; }
+  .section#welcome .r-content{ margin-top: 10px !important; }
+
+  .slidetext{
+    color: #f2f2f2;
+    z-index: 9;
+    padding-top: 2% !important;
+  }
+  .slidetext label{ font-size: 330% !important; }
+
+  html.fsvs #fsvs-pagination{ right: 0px !important; }
+
+  .slider .item{ height: 70vh !important; margin-top: 20vh; }
+  .project-carrusel .leftRow{ left: 0% !important; }
+
+  /** Servicios **/
+  .page_content .service{ padding: 2% 5%;}
+  .page_content .service h2.service_name{ width: 98%; margin: 0 auto 3vh; font-weight: 700; font-size: 4vh; }
+  .page_content .service div.image,
+  .page_content .service div.content{ width: 48%; margin: 0 1%; float: left;}
+  .page_content .service:nth-child(odd) div.image,
+  .page_content .service:nth-child(odd) div.content{ float: right; }
+
+  .service{ display: block; border-bottom: 1px solid #e3e3e3; height: auto; overflow: auto; margin-bottom: 10px; }
+  .service img{ width: 200px !important; height: 200px !important;  -webkit-border-radius: 50%; border-radius: 50%; border: 2px solid #66ccff;}
+
+  #aboutus .title { margin-top: 10vh !important; }
+
+  @media all and (orientation:landscape) {
+    /** Custom Code **/
+    .project-carrusel{ height: 350px !important; }
+    .project-carrusel .carrusel-controls{ margin-top: 15px !important; }
+
+    /** servicios **/
+    .service_carrusel li{ height: 200px; }
+    .service_carrusel li h3{ height: 1.5em; }
+  }
+
+  @media all and (orientation:portrait) {
+    /** Custom Code **/
+    #home .imageSlider img{ width: 70% !important; margin-left: 15% !important; }
+    #home .imageSlider{ height: 20vh !important; }
+    #home .textSlider{ height: 10vh !important; text-align: center !important; margin-top: 15vh !important; }
+    #home .slider .item a{ margin-top: 6vh !important; }
+    .service_carrusel li{ height: 250px; }
+
+    /*** Servicios ***/
+    .servicesWrapper{ width: 92vw; height: 75vh; margin: 0px; padding: 0px; overflow: hidden;}
+    .service_carrusel{ position: relative; height: 65vh; margin: 0px; padding: 0px; }
+    .service_carrusel li{ position: relative; height: 80%; width: 86vw !important; margin: 0px; padding: 2vh 3vw; }
+    .service_carrusel li h3{ height: 1.5em;}
+    .servicesWrapper ul.paginador{ position: absolute; width: 64px; margin: 0px; padding: 0px; list-style: none; bottom: 40px; right: 20px; }
+    .servicesWrapper ul.paginador li{ width: 6px; height: 6px; background: #ffffff; float: left; margin: 0px 5px; -webkit-border-radius: 50%; border-radius: 50%; opacity: .4;}
+    .servicesWrapper ul.paginador li.active{ background: #FFFFFF; opacity: 1; }
+    .glide__slide{ visibility: hidden !important; }
+    .glide__slide.active{ visibility: visible !important; }
+
+    /*** proyectos ***/
+    .project-carrusel .project{ height: 100% !important; }
+    .project-carrusel .project .project-wrapper{ width: 100% !important; height: 70% !important; }
+    .project-carrusel .project .leftRow,
+    .project-carrusel .project .rightRow{ height: 20vh !important; padding: 0px !important; margin: 0px !important; top: 51vh !important; }
+    .project-carrusel .project .rightRow{ right: 0px !important; text-align: right;  }
+    .project-carrusel .project .leftRow{ text-align: left !important; left: 0px !important; }
+    .project-carrusel .project .leftRow:before, .rightRow:before{ line-height: 12vh !important; margin: 0px !important; font-size: 15vw !important; text-align: center !important; margin-left: -2vh !important;}
+    .project-carrusel .carrusel-controls{ margin-top: -26vh !important; width: 98% !important; }
+    .modalWindow .wrapperModalWindow .content #project .project-wrapper{ width: 100% !important; padding: 0 !important; height: 76vh !important; margin-top: 0vh !important;}
+    .modalWindow .wrapperModalWindow .content #project .project-wrapper .header{ height: 61vh !important; margin-bottom: 4vh; }
+    .modalWindow .wrapperModalWindow .content #project .project-wrapper .header h2{ margin: 0 !important; font-size: 6vw !important; height: auto !important; width: 100% !important; }
+    .modalWindow .wrapperModalWindow .content #project .project-wrapper .header .keywords{ margin-bottom: 0 !important; height: auto !important; font-size: 5vw !important; }
+    .modalWindow .wrapperModalWindow .content #project .project-wrapper .image,
+    .modalWindow .wrapperModalWindow .content #project .project-wrapper .description{ width: 100% !important; margin: 20px 0 0 0 !important; text-align: center; height: 40vh !important; }
+    .modalWindow .wrapperModalWindow .content #project .project-wrapper .description p{ font-size: 4vw !important; }
+    .modalWindow .wrapperModalWindow .content #project .project-wrapper .image{ height: 33vh !important; }
+    .modalWindow .wrapperModalWindow .content #project .project-wrapper .image img{ width: 96% !important; }
+  }
+}

@@ -1,0 +1,413 @@
+/***************************************************************************
+ * Este es el framework de Ink Studio - Resposive Web Design
+ *
+ * Este framework se basa en el framework 960 grid
+ *
+ * @autor: Leonardo Julián Suárez Amézquita
+ * @web: http://www.inkstudio.com.co
+ * 2013
+ ***************************************************************************/
+
+/* Configuracion */
+@-o-viewport {
+  width: device-width;
+  initial-scale: 1.0;
+  maximum-scale: 1.0;
+}
+@-ms-viewport {
+  width: device-width;
+  initial-scale: 1.0;
+  maximum-scale: 1.0;
+}
+@viewport {
+  width: device-width;
+  initial-scale: 1.0;
+  maximum-scale: 1.0;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.wrapper{
+  width: 100%;
+  min-height: 100%;
+}
+
+.content-full{
+  width: 100%;
+}
+
+.content-fluid-960 {
+  width: 92%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-fluid{
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.content{
+  /**
+      Your Custom CSS Rules Here!
+  **/
+}
+
+
+/* Rows >>
+-----------------------------------------------------------------------------------------------------*/
+.row{
+  position: relative;
+  display: block;
+  margin: 1% 0% 1% 0%;
+  overflow: auto;
+}
+
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.t_grid_1,
+.t_grid_2,
+.t_grid_3,
+.t_grid_4,
+.t_grid_5,
+.t_grid_6,
+.t_grid_7,
+.t_grid_8,
+.m_grid_1,
+.m_grid_2,
+.m_grid_3,
+.m_grid_4 {
+  display:inline;
+  float: left;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  min-height: 30px;
+}
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+img{ max-width: 100%; }
+
+/*
+ *  Computadora de escritorio
+ * 	Trabaja a 12 Columnas
+ */
+/*@media screen And (min-width : 999px){*/
+
+
+.grid_1 {
+  width:6.333%;
+}
+
+.grid_2 {
+  width:14.667%;
+}
+
+.grid_3 {
+  width:23.0%;
+}
+.grid_3.no-spaces {
+  width:25.0%;
+}
+
+.grid_4 {
+  width:31.333%;
+}
+
+.grid_5 {
+  width:39.667%;
+}
+
+.grid_6 {
+  width:48.0%;
+}
+.grid_6.no-spaces {
+  width:50.0%;
+}
+
+.grid_7 {
+  width:56.333%;
+}
+
+.grid_8 {
+  width:64.667%;
+}
+
+.grid_9 {
+  width:73.0%;
+}
+
+.grid_10 {
+  width:81.333%;
+}
+
+.grid_11 {
+  width:89.667%;
+}
+
+.grid_12 {
+  width:98.0%;
+}
+
+.grid_12.no-spaces {
+  width:100%;
+}
+
+@media screen And (min-width : 68.001em){
+  .no-desktop{
+    display: none !important;
+  }
+}
+
+/*
+ *  Tablets
+ * 	Trabaja a 8 Columnas
+ */
+@media screen And (min-width : 38.001em) And (max-width : 68em){
+  .no-tablet{
+    display: none !important;
+  }
+
+  .t_grid_2 {
+    width:23.0%;
+  }
+  .t_grid_2.no-spaces {
+    width:25.0%;
+  }
+
+  .t_grid_3 {
+    width:35.5%;
+  }
+
+  .t_grid_4 {
+    width:48.0%;
+  }
+  .t_grid_4.no-spaces {
+    width:50.0%;
+  }
+
+  .t_grid_5 {
+    width:60.5%;
+  }
+
+  .t_grid_6 {
+    width:73.0%;
+  }
+
+  .t_grid_7 {
+    width:85.5%;
+  }
+
+  .t_grid_8 {
+    width:98.0%;
+  }
+
+  .t_grid_8.no-spaces {
+    width:100%;
+  }
+
+  .no-tablet{
+    display: none !important;
+  }
+
+  @media all and (orientation:portrait) {
+    .no-tportrait{
+      display: none;
+    }
+  }
+
+  @media all and (orientation:landscape) {
+    /*** Landscape tablets ****/
+
+    .lt_grid_1 {
+      width:10.5%;
+    }
+
+    .lt_grid_2 {
+      width:23.0%;
+    }
+
+    .lt_grid_3 {
+      width:35.5%;
+    }
+
+    .lt_grid_4 {
+      width:48.0%;
+    }
+
+    .lt_grid_5 {
+      width:60.5%;
+    }
+
+    .lt_grid_6 {
+      width:73.0%;
+    }
+
+    .lt_grid_7 {
+      width:85.5%;
+    }
+
+    .lt_grid_8 {
+      width:98.0%;
+    }
+
+    .no-tlandscape{
+      display: none;
+    }
+  }
+}
+
+/*
+ *  Mobile
+ * 	Trabaja a 4 Columnas
+ */
+@media screen And (max-width: 38em){
+  .m_grid_1 {
+    width:23.0%; margin-bottom: 1%;
+  }
+
+  .m_grid_2 {
+    width:48.0%; margin-bottom: 1%;
+  }
+
+  .m_grid_3 {
+    width:73.0%; margin-bottom: 1%;
+  }
+
+  .m_grid_4 {
+    width:98.0%; margin-bottom: 1%;
+  }
+  .m_grid_4.no-spaces {
+    width:100.0%;
+  }
+
+  .no-mobile{
+    display: none !important;
+  }
+
+  /**
+  * Landscape mobile
+   */
+  @media all and (orientation:landscape) {
+    .lm_grid_1 {
+      width:23.0%; margin-bottom: 1%;
+    }
+
+    .lm_grid_2 {
+      width:48.0%; margin-bottom: 1%;
+    }
+
+    .lm_grid_3 {
+      width:73.0%; margin-bottom: 1%;
+    }
+
+    .lm_grid_4 {
+      width:98.0%; margin-bottom: 1%;
+    }
+
+    .no-mlandscape{
+      display: none;
+    }
+  }
+
+  @media all and (orientation:portrait) {
+    .no-mportrait{
+      display: none;
+    }
+  }
+
+}
+
+
+/* Modifiers >>
+-----------------------------------------------------------------------------------------------------*/
+/** Elimina el margen de un objeto **/
+.no-spaces{ margin: 0%; }
+
+/** Crea columnas sin espacios. Convierte las margenes en padding **/
+.content-full.no-spaces .grid_1, .content-fluid-960.no-spaces .grid_1, .content-fluid.no-spaces .grid_1, .content.no-spaces .grid_1,
+.content-full.no-spaces .grid_2, .content-fluid-960.no-spaces .grid_2, .content-fluid.no-spaces .grid_2, .content.no-spaces .grid_2,
+.content-full.no-spaces .grid_3, .content-fluid-960.no-spaces .grid_3, .content-fluid.no-spaces .grid_3, .content.no-spaces .grid_3,
+.content-full.no-spaces .grid_4, .content-fluid-960.no-spaces .grid_4, .content-fluid.no-spaces .grid_4, .content.no-spaces .grid_4,
+.content-full.no-spaces .grid_5, .content-fluid-960.no-spaces .grid_5, .content-fluid.no-spaces .grid_5, .content.no-spaces .grid_5,
+.content-full.no-spaces .grid_6, .content-fluid-960.no-spaces .grid_6, .content-fluid.no-spaces .grid_6, .content.no-spaces .grid_6,
+.content-full.no-spaces .grid_7, .content-fluid-960.no-spaces .grid_7, .content-fluid.no-spaces .grid_7, .content.no-spaces .grid_7,
+.content-full.no-spaces .grid_8, .content-fluid-960.no-spaces .grid_8, .content-fluid.no-spaces .grid_8, .content.no-spaces .grid_8,
+.content-full.no-spaces .grid_9, .content-fluid-960.no-spaces .grid_9, .content-fluid.no-spaces .grid_9, .content.no-spaces .grid_9,
+.content-full.no-spaces .grid_10, .content-fluid-960.no-spaces .grid_10, .content-fluid.no-spaces .grid_10, .content.no-spaces .grid_10,
+.content-full.no-spaces .grid_11, .content-fluid-960.no-spaces .grid_11, .content-fluid.no-spaces .grid_11, .content.no-spaces .grid_11,
+.content-full.no-spaces .grid_12, .content-fluid-960.no-spaces .grid_12, .content-fluid.no-spaces .grid_12 .content.no-spaces .grid_12,
+.content-full.no-spaces .t_grid_1, .content-fluid-960.no-spaces .t_grid_1, .content-fluid.no-spaces .t_grid_1, .content.no-spaces .t_grid_1,
+.content-full.no-spaces .t_grid_2, .content-fluid-960.no-spaces .t_grid_2, .content-fluid.no-spaces .t_grid_2, .content.no-spaces .t_grid_2,
+.content-full.no-spaces .t_grid_3, .content-fluid-960.no-spaces .t_grid_3, .content-fluid.no-spaces .t_grid_3, .content.no-spaces .t_grid_3,
+.content-full.no-spaces .t_grid_4, .content-fluid-960.no-spaces .t_grid_4, .content-fluid.no-spaces .t_grid_4, .content.no-spaces .t_grid_4,
+.content-full.no-spaces .t_grid_5, .content-fluid-960.no-spaces .t_grid_5, .content-fluid.no-spaces .t_grid_5, .content.no-spaces .t_grid_5,
+.content-full.no-spaces .t_grid_6, .content-fluid-960.no-spaces .t_grid_6, .content-fluid.no-spaces .t_grid_6, .content.no-spaces .t_grid_6,
+.content-full.no-spaces .t_grid_7, .content-fluid-960.no-spaces .t_grid_7, .content-fluid.no-spaces .t_grid_7, .content.no-spaces .t_grid_7,
+.content-full.no-spaces .t_grid_8, .content-fluid-960.no-spaces .t_grid_8, .content-fluid.no-spaces .t_grid_8, .content.no-spaces .m_grid_1,
+.content-full.no-spaces .m_grid_1, .content-fluid-960.no-spaces .m_grid_1, .content-fluid.no-spaces .m_grid_1, .content.no-spaces .m_grid_2,
+.content-full.no-spaces .m_grid_2, .content-fluid-960.no-spaces .m_grid_2, .content-fluid.no-spaces .m_grid_2, .content.no-spaces .m_grid_3,
+.content-full.no-spaces .m_grid_3, .content-fluid-960.no-spaces .m_grid_3, .content-fluid.no-spaces .m_grid_3, .content.no-spaces .m_grid_4
+{
+  display:inline;
+  float: left;
+  position: relative;
+  margin: 0%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.content-full.no-spaces .row, .content-fluid-960.no-spaces .row, .content-fluid.no-spaces .row, .content.no-spaces .row{
+  margin: 0%;
+}
