@@ -1,82 +1,74 @@
-html.fsvs {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden; }
-
-html.fsvs #fsvs-body {
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%; }
-
-html.fsvs #fsvs-body > * {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000; }
-
-html.fsvs #fsvs-pagination {
-  margin: 0;
-  padding: 8px 4px;
-  position: fixed;
-  height: auto;
-  right: -100px;
-  top: 50%;
-  z-index: 999;
-  width: 32px; }
-
-html.fsvs #fsvs-pagination li {
-  list-style: none;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  margin: 0 0 15px 0;
-  cursor: pointer; }
-
-html.fsvs #fsvs-pagination li > span {
-  border-radius: 100%;
-  width: 22px;
-  height: 22px;
-  line-height: 22px;
-  border: none;
-  display: block; }
-
-html.fsvs #fsvs-pagination li > span > span {
-  border-radius: 100%;
-  width: 12px;
-  height: 12px;
-  line-height: 12px;
-  border: 1px solid white;
-  display: block;
-  margin: 4px; }
-
-html.fsvs #fsvs-pagination li.active > span {
-  background: none;
-  border: none; }
-
-html.fsvs #fsvs-pagination li.active > span > span {
-  background: white; }
-
-html.fsvs #fsvs-pagination li:last-child {
-  margin: 0; }
-
-html.fsvs #fsvs-pagination.blueTheme li > span > span {
-  border-color: #2d2c41; }
-
-html.fsvs #fsvs-pagination.blueTheme li.active > span > span {
-  background: #2d2c41; }
-
 @import url(http://fonts.googleapis.com/css?family=Satisfy);
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+.row-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #66ccff;
+  border-left: 1px solid #66ccff; }
+  .row-icon.left {
+    transform: rotate(-45deg);
+    webkit-transform: rotate(-45deg); }
+  .row-icon.right {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg); }
+  .row-icon.down {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg); }
+  .row-icon.up {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); }
+
+.burger-icon {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: none;
+  background: none;
+  z-index: 9999999; }
+
+.burger-icon.slideOutUp {
+  top: -10px; }
+
+.burger-icon {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px; }
+
+.burger-icon span, .burger-icon span:before, .burger-icon span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: ''; }
+
+.burger-icon span:before {
+  top: -10px; }
+
+.burger-icon span:after {
+  bottom: -10px; }
+
+.burger-icon span, .burger-icon span:before, .burger-icon span:after {
+  transition: all 500ms ease-in-out; }
+
+.burger-icon.active span {
+  background-color: transparent; }
+
+.burger-icon.active span:before, .burger-icon.active span:after {
+  top: 0; }
+
+.burger-icon.active span:before {
+  transform: rotate(45deg); }
+
+.burger-icon.active span:after {
+  transform: rotate(-45deg); }
+
 .mobile-menu {
   position: absolute;
   top: 0px;
@@ -113,29 +105,6 @@ html.fsvs #fsvs-pagination.blueTheme li.active > span > span {
   color: #FFFFFF;
   width: 100%;
   display: block; }
-
-.menuOpen,
-#menuClose {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 30px;
-  visibility: visible !important;
-  float: right; }
-
-.menuOpen {
-  margin-top: -1%;
-  color: #FFFFFF;
-  cursor: pointer;
-  z-index: 9999999; }
-
-.menuOpen:before, #menuClose:before, .start:before,
-.menuOpen:after, #menuClose:after, .start:after {
-  font-size: 150% !important;
-  font-style: normal;
-  margin-left: 20px; }
 
 .mobile-menu ul {
   list-style: none;
@@ -215,7 +184,8 @@ html.fsvs #fsvs-pagination.blueTheme li.active > span > span {
   margin: 0px;
   display: block;
   float: left;
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  overflow: hidden; }
 
 .section .r-content {
   margin-top: 12vh;
@@ -492,22 +462,25 @@ projectCarrusel .project-carrusel li a {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  -moz-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in; }
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0; }
+  #socialVisor.facebook, #socialVisor.instagram, #socialVisor.twitter {
+    visibility: visible;
+    opacity: 1; }
 
 #socialVisor.facebook {
-  background: #3b5998;
-  z-index: 5; }
+  background: #3b5998; }
 
 #socialVisor.instagram {
-  background: #c08d64;
-  z-index: 5; }
+  background: #c08d64; }
 
 #socialVisor.twitter {
-  background: #00aced;
-  z-index: 5; }
+  background: #00aced; }
 
 #socialVisor label {
   position: relative;
@@ -601,7 +574,7 @@ nav#menu {
       float: left;
       text-align: left;
       margin-right: 10px; }
-      .socialbar ul li a:before {
+      .socialbar ul li a {
         font-size: 1.5em; }
       .socialbar ul li a, .socialbar ul li a:visited {
         color: #FFFFFF;
@@ -609,7 +582,8 @@ nav#menu {
         -webkit-transition: all 0.9s;
         transition: all 0.9s; }
 
-.socialbar.blueTheme ul li a, .socialbar.blueTheme ul li a:visited {
+.socialbar.blueTheme ul li a,
+.socialbar.blueTheme ul li a:visited {
   color: #2C3E50; }
 
 /************ HOME ********/
@@ -659,18 +633,19 @@ nav#menu {
       letter-spacing: 0.1em;
       padding-top: 25px; }
   #welcome .start {
-    width: 100%;
-    color: #FFFFFF;
-    text-align: center;
-    left: 0px;
-    z-index: 1;
-    font-size: 30px;
-    bottom: 3vh;
-    padding-top: 3vh;
-    margin-left: -10px;
-    text-decoration: none; }
-  #welcome .start:before {
-    font-size: 6vh; }
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%); }
+    #welcome .start i.row-icon {
+      border-color: #fff;
+      width: 10px;
+      height: 10px;
+      margin: 28%; }
 
 /************ HOME ********/
 #home .imageSlider, #home .textSlider {
@@ -737,11 +712,8 @@ nav#menu {
 #works .project-carrusel {
   position: relative;
   height: 70vh;
-  display: block; }
-  #works .project-carrusel .rightRow.flaticon-move13:before,
-  #works .project-carrusel .leftRow.flaticon-arrow395:before {
-    font-size: 5em;
-    color: #66ccff; }
+  display: block;
+  visibility: hidden; }
   #works .project-carrusel .project {
     position: relative;
     height: 78%;
@@ -796,21 +768,14 @@ nav#menu {
         filter: grayscale(100%); }
       #works .project-carrusel .project .project-wrapper:hover .zoom {
         visibility: visible; }
-    #works .project-carrusel .project .leftRow, #works .project-carrusel .project .rightRow {
+    #works .project-carrusel .project .left-row,
+    #works .project-carrusel .project .right-row {
       position: absolute;
-      width: 10%;
-      height: 100%;
-      padding: 0px;
-      padding-top: 0px;
-      top: 0px;
-      display: block;
-      text-decoration: none; }
-    #works .project-carrusel .project .leftRow {
+      top: 35%; }
+    #works .project-carrusel .project .left-row {
       left: 5%; }
-    #works .project-carrusel .project .rightRow {
+    #works .project-carrusel .project .right-row {
       right: 5%; }
-    #works .project-carrusel .project .leftRow:before, #works .project-carrusel .project .rightRow:before {
-      line-height: 55vh; }
   #works .project-carrusel div .carrusel-controls {
     width: 60%;
     margin: auto;
@@ -897,6 +862,9 @@ nav#menu {
   font-size: 1em;
   text-align: left;
   line-height: 1.3em; }
+
+#services ul.service_carrusel {
+  visibility: hidden; }
 
 /***** CONTACT ******/
 #contact * {
@@ -1008,6 +976,8 @@ nav#menu {
       outline: none;
       font-size: 4vh; }
     #contact .contact_info ul {
+      width: 100%;
+      float: left;
       list-style: none;
       margin: 5vh 0;
       padding: 0 !important; }
@@ -1043,13 +1013,11 @@ html.fsvs #fsvs-pagination li > span > span{
   position: absolute;
   width: 100vw;
   height: 100vh;
+  padding-bottom: 20px;
   top: 0px;
   left: 0px;
   z-index: 0;
   opacity: 0.88; }
-
-#aboutus .backgroundColor {
-  z-index: -1; }
 
 .separator {
   background: #f2f2f2;
@@ -1084,3 +1052,15 @@ html.fsvs #fsvs-pagination li > span > span{
 #aboutus {
   background-image: url(../images/backgrounds/about.jpg);
   background-size: cover; }
+
+#fp-nav ul li a span {
+  background: #ffffff; }
+
+#fp-nav ul li a span.blueTheme {
+  background: #66ccff; }
+
+#fp-nav ul li a span {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }

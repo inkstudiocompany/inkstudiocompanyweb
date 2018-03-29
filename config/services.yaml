@@ -18,6 +18,7 @@ parameters:
 
     beaver_blocks_directory:
         - { name: 'Ancho full', twig: 'Core/Blocks/full_block.html.twig' }
+    locale: 'en'
 
 services:
     # default configuration for services in *this* file

@@ -10,7 +10,9 @@
         <div class="project-carrusel grid_12 t_grid_8 content-full no-spaces">
 
             <div class="project">
-                <a href="javascript:portfolioButton('prev', true)" rel="nofollow" class="leftRow animated flaticon-arrow395"></a>
+                <a href="javascript:portfolioButton('prev', true)" rel="nofollow" class="animated left-row">
+                    <i class="row-icon left"></i>
+                </a>
                 <div class="project-wrapper animated">
                     {% if portfolio is not empty %}
                         {% for key, project in portfolio %}
@@ -24,7 +26,9 @@
                         {% endfor %}
                     {% endif %}
                 </div>
-                <a href="javascript:portfolioButton('next', true)" rel="nofollow" class="rightRow animated flaticon-move13"></a>
+                <a href="javascript:portfolioButton('next', true)" rel="nofollow" class="animated right-row">
+                    <i class="row-icon right"></i>
+                </a>
             </div>
 
 
@@ -37,7 +41,8 @@
                                 {% set class = 'active' %}
                             {% endif %}
                             <li>
-                                <a href="javascript:portfolioButton({{ loop.index }}, false)" class="{{ class }}"></a></li>
+                                <a href="javascript:portfolioButton({{ loop.index }}, false)" class="{{ class }}"></a>
+                            </li>
                         {% endfor %}
                     {% endif %}
                 </ul>

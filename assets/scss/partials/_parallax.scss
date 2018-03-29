@@ -1,0 +1,12 @@
+#fp-nav ul li a span {
+  background: #ffffff;
+}
+#fp-nav ul li a span.blueTheme {
+  background: #66ccff;
+}
+#fp-nav ul li a span {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}

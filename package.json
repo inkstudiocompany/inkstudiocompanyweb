@@ -1,0 +1,27 @@
+{
+  "name": "inkstudio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "fullpage.js": "^2.9.6",
+    "glidejs": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglifycss": "^1.0.9",
+    "jquery": "^3.3.1",
+    "require-dir": "^1.0.0",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

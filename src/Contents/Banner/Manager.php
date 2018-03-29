@@ -10,6 +10,11 @@ namespace App\Contents\Banner;
 
 use Beaver\ContentBundle\Base\Contents\AbstractContentManager;
 
+/**
+ * Class Manager
+ *
+ * @package App\Contents\Banner
+ */
 class Manager extends AbstractContentManager
 {
 	/**

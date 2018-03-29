@@ -1,3 +1,6 @@
+#imports:
+#    - { resource: '@CoreBundle/Distribution/config/doctrine_migrations.yml' }
+
 doctrine_migrations:
     dir_name: '%kernel.project_dir%/src/Migrations'
     # namespace is arbitrary but should be different from App\Migrations

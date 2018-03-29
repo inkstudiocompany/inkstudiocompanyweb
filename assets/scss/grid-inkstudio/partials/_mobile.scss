@@ -52,15 +52,28 @@
   .modalWindow .wrapperModalWindow .content #project .project-wrapper .image{ height: 33vh !important; }
   .modalWindow .wrapperModalWindow .content #project .project-wrapper .image img{ width: 96% !important; }
 
-
-  .servicesWrapper{ width: 92vw; height: 75vh; margin: 0px; padding: 0px; overflow: hidden;}
-  .service_carrusel{ position: relative; height: 65vh; margin: 0px; padding: 0px; }
-  .service_carrusel li{ position: relative; height: 80%; width: 86vw !important; margin: 0px; padding: 2vh 3vw; }
-  .servicesWrapper ul.paginador{ position: absolute; width: 64px; margin: 0px; padding: 0px; list-style: none; bottom: 20px; right: 20px; }
-  .servicesWrapper ul.paginador li{ width: 6px; height: 6px; background: #ffffff; float: left; margin: 0px 5px; -webkit-border-radius: 50%; border-radius: 50%; opacity: .4;}
-  .servicesWrapper ul.paginador li.active{ background: #FFFFFF; opacity: 1; }
-  .glide__slide{ visibility: hidden !important; }
-  .glide__slide.active{ visibility: visible !important; }
+  .servicesWrapper .paginador {
+    position: absolute;
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+    bottom: 30px !important;
+    padding-right: 20px;
+    text-align: right !important;
+  }
+  .servicesWrapper .paginador button{
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    margin: 0px 5px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    opacity: .4;
+  }
+  .servicesWrapper .paginador .active{
+    background: #FFFFFF;
+    opacity: 1;
+  }
 
   #aboutus .title h1 { font-size: 8vw !important; }
   #aboutus .title h2 { color: #FFFFFF; }

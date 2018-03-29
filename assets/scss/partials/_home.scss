@@ -44,19 +44,22 @@
   }
 
   .start{
-    width: 100%;
-    color: #FFFFFF;
-    text-align: center;
-    left: 0px;
-    z-index: 1;
-    font-size: 30px;
-    bottom: 3vh;
-    padding-top: 3vh;
-    margin-left: -10px;
-    text-decoration: none;
-  }
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
 
-  .start:before{ font-size: 6vh; }
+    i.row-icon{
+      border-color: #fff;
+      width: 10px;
+      height: 10px;
+      margin: 28%;
+    }
+  }
 }
 
 
@@ -95,10 +98,10 @@
 /************ WORKS ********/
 #works {
   .project-carrusel {
-    position: relative; height: 70vh; display: block;
-
-    .rightRow.flaticon-move13:before,
-    .leftRow.flaticon-arrow395:before{ font-size: 5em; color: #66ccff; }
+    position: relative;
+    height: 70vh;
+    display: block;
+    visibility: hidden;
 
     .project{
       position: relative; height: 78%; min-height: 300px; max-height: 87vmax;
@@ -123,10 +126,13 @@
         .zoom{ visibility: visible; }
       }
 
-      .leftRow, .rightRow{ position: absolute; width: 10%; height: 100%; padding: 0px; padding-top: 0px; top: 0px; display: block; text-decoration: none; }
-      .leftRow{ left: 5%; }
-      .rightRow{ right: 5%; }
-      .leftRow:before, .rightRow:before{ line-height: 55vh; }
+      .left-row,
+      .right-row {
+        position: absolute;
+        top: 35%;
+      }
+      .left-row{ left: 5%; }
+      .right-row{ right: 5%; }
     }
     div .carrusel-controls{
       width: 60%; margin: auto;  padding: 0px; margin-top: 20px; list-style: none;
@@ -179,5 +185,9 @@
   }
 
   p{ color: #ffffff; font-size: 1em; text-align: left; line-height: 1.3em; }
+
+  ul.service_carrusel {
+    visibility: hidden;
+  }
 }
 

@@ -15,8 +15,18 @@ html.fsvs #fsvs-pagination li > span > span{
   background-image: url(../images/backgrounds/mockup_1.jpg); background-size: cover;
 }
 
-.backgroundColor{ background: #2d2c41; position: absolute; width: 100vw; height: 100vh; top: 0px; left: 0px; z-index: 0; opacity: 0.88; }
-#aboutus .backgroundColor{ z-index: -1; }
+.backgroundColor{
+  background: #2d2c41;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 20px;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  opacity: 0.88;
+}
+
 .separator{ background: #f2f2f2; bottom: -85px; width: 110vw; height: 100px; position: absolute; -ms-transform: rotate(-1.5deg); /* IE 9 */
   -webkit-transform: rotate(-1.5deg); /* Chrome, Safari, Opera */
   transform: rotate(-1.5deg); }

@@ -17,7 +17,7 @@ use Doctrine\ORM\Mapping As ORM;
  *
  * @package App\Entity
  * @ORM\Entity
- * @ORM\Table(name="banner")
+ * @ORM\Table(name="content_banner")
  */
 class Banner extends AbstractContentEntity
 {

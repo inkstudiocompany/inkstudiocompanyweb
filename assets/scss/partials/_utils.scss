@@ -1,0 +1,76 @@
+.row-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #66ccff;
+  border-left: 1px solid #66ccff;
+
+  &.left {
+    transform: rotate(-45deg);
+    webkit-transform: rotate(-45deg);
+  }
+
+  &.right {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  &.down {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  &.up {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+
+.burger-icon {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: none;
+  background: none;
+  z-index: 9999999;
+}
+.burger-icon.slideOutUp { top: -10px; };
+
+.burger-icon { cursor: pointer; padding: 10px 35px 16px 0px; }
+.burger-icon span, .burger-icon span:before, .burger-icon span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.burger-icon span:before {
+  top: -10px;
+}
+.burger-icon span:after {
+  bottom: -10px;
+}
+
+.burger-icon span, .burger-icon span:before, .burger-icon span:after {
+  transition: all 500ms ease-in-out;
+}
+.burger-icon.active span {
+  background-color: transparent;
+}
+.burger-icon.active span:before, .burger-icon.active span:after {
+  top: 0;
+}
+.burger-icon.active span:before {
+  transform: rotate(45deg);
+}
+.burger-icon.active span:after {
+  transform: rotate(-45deg);
+}

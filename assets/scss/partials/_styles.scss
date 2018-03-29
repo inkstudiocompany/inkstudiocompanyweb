@@ -34,14 +34,24 @@ projectCarrusel {
 }
 #socialVisor{
   position: fixed; width: 100vw; height: 100vh;
-  -moz-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+
+  &.facebook,
+  &.instagram,
+  &.twitter {
+    visibility: visible;
+    opacity: 1;
+  }
 }
-#socialVisor.facebook{ background: #3b5998; z-index: 5; }
-#socialVisor.instagram{ background: #c08d64; z-index: 5; }
-#socialVisor.twitter{ background: #00aced; z-index: 5; }
+#socialVisor.facebook{ background: #3b5998; }
+#socialVisor.instagram{ background: #c08d64; }
+#socialVisor.twitter{ background: #00aced; }
 #socialVisor label{ position: relative; float: left; color: #FFFFFF; margin: 0 35vw; width: 30vw; text-align: center; font-size: 12vh; font-weight: 100; margin-top: 39vh; }
 
 .title{
@@ -93,7 +103,7 @@ nav#menu{
       text-align: left;
       margin-right: 10px;
 
-      a:before{ font-size: 1.5em; }
+      a{ font-size: 1.5em; }
       a, a:visited{
         color: #FFFFFF; text-decoration: none; -webkit-transition: all 0.9s; transition: all 0.9s;
       }
@@ -101,5 +111,8 @@ nav#menu{
   }
 }
 
-.socialbar.blueTheme ul li a, .socialbar.blueTheme ul li a:visited{ color: #2C3E50; }
+.socialbar.blueTheme ul li a,
+.socialbar.blueTheme ul li a:visited{
+  color: #2C3E50;
+}
 

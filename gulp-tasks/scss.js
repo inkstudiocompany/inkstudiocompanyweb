@@ -26,6 +26,9 @@ var dest = 'public/css/';
  */
 var thirdParty = [
     'node_modules/animate.css/animate.min.css',
+    'node_modules/fullpage.js/dist/jquery.fullpage.min.css',
+    'node_modules/glidejs/dist/css/glide.core.css',
+    'node_modules/glidejs/dist/css/glide.theme.css',
 ];
 
 /**
