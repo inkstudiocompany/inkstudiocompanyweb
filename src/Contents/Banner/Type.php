@@ -10,6 +10,7 @@ namespace App\Contents\Banner;
 
 
 use Beaver\ContentBundle\Base\Form\AbstractContentType;
+use Beaver\ContentBundle\Form\GalleryType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
@@ -47,7 +48,7 @@ class Type extends AbstractContentType
 			->add('description', TextareaType::class, [
 				'label' => 'Descripción',
 			])
-			->add('image', TextType::class, [
+			->add('image', GalleryType::class, [
 				'label' => 'Imagen',
 			])
 			->add('style', TextareaType::class, [

@@ -18,3 +18,4 @@
 /beaver-install/
 /node_modules/
 /symfony.lock
+/src/Migrations/
