@@ -47,12 +47,16 @@ class Type extends AbstractContentType
 			])
 			->add('description', TextareaType::class, [
 				'label' => 'Descripción',
+				'attr'  => [
+					'class' => 'editor'
+				]
 			])
 			->add('image', GalleryType::class, [
 				'label' => 'Imagen',
 			])
 			->add('style', TextareaType::class, [
-				'label' => 'Css',
+				'label'     => 'Css',
+				'required'  => false
 			])
 		;
 	}

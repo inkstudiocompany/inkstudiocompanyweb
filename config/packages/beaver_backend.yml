@@ -1,0 +1,24 @@
+imports:
+    #- { resource: '@BackendBundle/Resources/config/security.yaml' }
+    - { resource: '@CoreBundle/Resources/config/services.yml' }
+    - { resource: '@ContentBundle/Resources/config/services.yml' }
+    - { resource: '@BackendBundle/Resources/config/services.yml' }
+
+parameters:
+    layouts:
+        - Beaver\CoreBundle\Model\Page\Layout\DefaultLayout
+        - Beaver\CoreBundle\Model\Page\Layout\LeftSidebarLayout
+
+    blocks:
+        - { name: 'Ancho full Overwrite', twig: 'Core/Blocks/full_block.html.twig' }
+
+    contents:
+        - App\Contents\Banner\Manager
+
+    beaver_blocks_directory:
+        - { name: 'Ancho full', twig: 'Core/Blocks/full_block.html.twig' }
+
+services:
+    contents:
+        class: App\Service\Contents
+        public: true
