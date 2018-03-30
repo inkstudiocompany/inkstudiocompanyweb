@@ -7,10 +7,11 @@
                 </div>
                 <div class="textSlider grid_6 t_grid_8 lt_grid_4 m_grid_4 lm_grid_2">
                     <label class="animated">{{ banner.description | raw }}</label>
+                    {{ banner.summary | raw }}
                 </div>
                 <div class="grid_12 t_grid_8 m_grid_4">
                     <div class="grid_5  t_grid_3 m_grid_1">&nbsp;</div>
-                    <a href="#services" title="{{ banner.summary }}" class="grid_2 t_grid_2 m_grid_2 button animated">Ver más</a>
+                    <a href="#services" title="{{ banner.summary | raw }}" class="grid_2 t_grid_2 m_grid_2 button animated">Ver más</a>
                     <div class="grid_5 t_grid_3 m_grid_1">&nbsp;</div>
                 </div>
             </div>
