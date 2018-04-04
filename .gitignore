@@ -18,3 +18,4 @@
 /node_modules/
 /symfony.lock
 /src/Migrations/
+error_log
