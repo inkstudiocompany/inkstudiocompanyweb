@@ -28,7 +28,7 @@ var thirdParty = [
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/wow.js/dist/wow.min.js',
     'node_modules/glidejs/dist/glide.min.js',
-    'node_modules/fullpage.js/dist/jquery.fullpage.min.js',
+    'node_modules/fullpage.js/dist/jquery.fullpage.js',
 ];
 
 /**

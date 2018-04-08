@@ -74,8 +74,11 @@
     <link type="text/css" rel="stylesheet" href="{{ asset('css/styles.min.css') }}" />
 
     <script type="text/javascript" src="{{ asset('js/vendor/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/vendor/jquery.fullpage.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/vendor/jquery.fullpage.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/vendor/glide.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/vendor/wow.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main.min.js') }}"></script>
+
+    {% block custom_styles %}
+    {% endblock custom_styles %}
 </head>

@@ -116,4 +116,14 @@ class Banner extends AbstractContentEntity
 		$this->style = $style;
 		return $this;
 	}
+	
+	/**
+	 * String name for content list panel.
+	 *
+	 * @return string
+	 */
+	public function getContentName(): string
+	{
+		return $this->getSummary();
+	}
 }

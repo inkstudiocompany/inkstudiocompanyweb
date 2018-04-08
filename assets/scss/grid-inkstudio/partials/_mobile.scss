@@ -1,29 +1,42 @@
 /********* CUSTOMIZE YOU STYLESHEET FOR MOBILE DEVICES *************/
 @media screen And (max-width: 38em) {
-  html, body{ font-size: 12px; }
-
-  .section#welcome .r-content {
-    margin-top: 0px !important;
-  }
-  .section .r-content {
-    margin-top: 65px !important;
+  html, body{
+    /* font-size: 12px; */
   }
 
   /*** GLOBALS **/
-  .title { margin: 10vh 0 1vh 0 !important; }
-  .title span { font-size: 0.9em !important; padding-top: 0px !important; }
-  .title h2 {
-    margin: 3vh 0 0 0;
-    padding: 0px;
-    font-size: 5vh !important;
-    line-height: 2em;
-    font-weight: 700;
-    text-transform: uppercase;
+  .title {
+    margin: 10vh 0 1vh 0 !important;
+
+    span {
+      font-size: 0.9em !important;
+      padding-top: 0px !important;
+    }
+
+    h2 {
+      margin: 3vh 0 0 0;
+      padding: 0px;
+      font-size: 5vh !important;
+      line-height: 2em;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
   }
 
   /*** WELCOME ***/
-  #welcome .logotipo { height: 75vh !important; margin-bottom: 3vh; }
-  #welcome .logotipo img { height: auto !important; }
+  #welcome {
+    .logotipo {
+      img {
+        width: 80vw !important;
+        height: auto !important;
+        margin-top: 0px !important;
+      }
+    }
+
+    .start{
+      bottom: 25vh !important;
+    }
+  }
 
   /*** HOME ***/
   .slider { height: 80vh !important; }

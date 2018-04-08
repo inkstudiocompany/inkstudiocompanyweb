@@ -1002,12 +1002,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inkstudiocompany/beaver-cms.git",
-                "reference": "a5f082b0c9e3e61544be492c1f601a75a057a743"
+                "reference": "c7354c15bb03db82de37ad9d75b87222905bec0b"
             },
             "dist": {
                 "type": "git",
                 "url": "https://github.com/inkstudiocompany/beaver-cms.git",
-                "reference": "a5f082b0c9e3e61544be492c1f601a75a057a743",
+                "reference": "c7354c15bb03db82de37ad9d75b87222905bec0b",
                 "shasum": null
             },
             "require": {
@@ -1051,7 +1051,7 @@
                 }
             ],
             "description": "My custom cms",
-            "time": "2018-03-30T02:29:37+00:00"
+            "time": "2018-04-08T14:40:27+00:00"
         },
         {
             "name": "jdorn/sql-formatter",

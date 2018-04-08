@@ -4,12 +4,18 @@ var timeOut = 0;
 
 jQuery(document).ready(function($){
     $('#fullpage').fullpage({
+        css3: true,
         navigation: true,
         parallax: true,
+        parallaxOptions: { percentage: 0 },
         anchors: ['bienvenido', 'homepage', 'portfolio', 'servicios', 'clientes', 'acerca-de', 'contactanos'],
         navigationTooltips: ['Welcome', 'Home', 'Portfolio', 'Servicios', 'Clientes', 'Acerca de', 'Contacto'],
         scrollingSpeed: 700,
         onLeave: function(index, nextIndex, direction) {
+            if (true === /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+                $('#welcome').css('margin-top', '75px');
+            }
+
             if(nextIndex === 3 || nextIndex === 5 || nextIndex === 7) {
                 $('#fp-nav ul li a span, .socialbar').addClass('blueTheme');
             } else {
