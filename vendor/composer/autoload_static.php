@@ -93,10 +93,8 @@ class ComposerStaticInit6eaa30b5a5ddd22f50b34486cb845c2f
             'Doctrine\\ORM\\' => 13,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\DBAL\\Migrations\\' => 25,
-            'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\DataFixtures\\' => 29,
-            'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
@@ -343,10 +341,6 @@ class ComposerStaticInit6eaa30b5a5ddd22f50b34486cb845c2f
         array (
             0 => __DIR__ . '/..' . '/doctrine/migrations/lib/Doctrine/DBAL/Migrations',
         ),
-        'Doctrine\\Common\\Lexer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
-        ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
@@ -354,10 +348,6 @@ class ComposerStaticInit6eaa30b5a5ddd22f50b34486cb845c2f
         'Doctrine\\Common\\DataFixtures\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures',
-        ),
-        'Doctrine\\Common\\Collections\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections',
         ),
         'Doctrine\\Common\\Cache\\' => 
         array (
@@ -436,6 +426,14 @@ class ComposerStaticInit6eaa30b5a5ddd22f50b34486cb845c2f
             'Doctrine\\DBAL\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/dbal/lib',
+            ),
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+            'Doctrine\\Common\\Collections\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/collections/lib',
             ),
         ),
     );

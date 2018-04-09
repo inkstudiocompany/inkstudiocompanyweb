@@ -41,7 +41,6 @@ class Type extends AbstractContentType
 			->add('summary', TextareaType::class, [
 				'label' => false,
 				'attr'  => [
-					
 					'class' => 'editor'
 				]
 			])
