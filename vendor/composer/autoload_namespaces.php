@@ -10,4 +10,6 @@ return array(
     'ProxyManager\\' => array($vendorDir . '/ocramius/proxy-manager/src'),
     'JsonpCallbackValidator' => array($vendorDir . '/willdurand/jsonp-callback-validator/src'),
     'Doctrine\\DBAL\\' => array($vendorDir . '/doctrine/dbal/lib'),
+    'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
+    'Doctrine\\Common\\Collections\\' => array($vendorDir . '/doctrine/collections/lib'),
 );
