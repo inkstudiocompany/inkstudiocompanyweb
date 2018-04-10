@@ -40,9 +40,7 @@ class Type extends AbstractContentType
 		$builder
 			->add('summary', TextareaType::class, [
 				'label' => false,
-				'attr'  => [
-					'class' => 'editor'
-				]
+				'label' => 'Título',
 			])
 			->add('description', TextareaType::class, [
 				'label' => 'Descripción',
