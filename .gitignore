@@ -1,8 +1,14 @@
-
+.DS_Store
 ###> symfony/framework-bundle ###
 .env
 /var/
 /vendor/
+
+/public/bundles
+/public/css
+/public/gallery
+/public/images
+/public/js
 ###< symfony/framework-bundle ###
 
 ###> symfony/web-server-bundle ###

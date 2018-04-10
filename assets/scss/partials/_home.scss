@@ -74,7 +74,21 @@
   }
   .imageSlider img{ position: absolute; bottom: 0; width: 90%; margin-left: 10%; }
   .textSlider {
-    label{ position: absolute; vertical-align: bottom; color: #FFFFFF; bottom: 0; font-size: 5vmax; font-weight: 900; padding-right: 5%; width: 95% !important; display: block; }
+    label{
+      position: absolute;
+      vertical-align: bottom;
+      bottom: 0;
+      font-size: 5vmax;
+      font-weight: 900;
+      color: #FFFFFF;
+      padding-right: 5%;
+      width: 95% !important;
+      display: block;
+
+      *{
+        font-size: inherit;
+      }
+    }
     span{ vertical-align: bottom; bottom: 0; font-size: 6vmax; font-weight: 900; }
   }
   .slider .item{

@@ -659,13 +659,15 @@ nav#menu {
 #home .textSlider label {
   position: absolute;
   vertical-align: bottom;
-  color: #FFFFFF;
   bottom: 0;
   font-size: 5vmax;
   font-weight: 900;
+  color: #FFFFFF;
   padding-right: 5%;
   width: 95% !important;
   display: block; }
+  #home .textSlider label * {
+    font-size: inherit; }
 
 #home .textSlider span {
   vertical-align: bottom;
