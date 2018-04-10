@@ -3,6 +3,11 @@
 .env
 /var/
 /vendor/
+/public/bundles
+/public/css
+/public/gallery
+/public/images
+/public/js
 ###< symfony/framework-bundle ###
 
 ###> symfony/web-server-bundle ###
