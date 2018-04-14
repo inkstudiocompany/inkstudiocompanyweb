@@ -25,10 +25,16 @@ class PageController extends Controller
 	public function home()
 	{
 		/** @var BaseResponse $bannersResponse */
-		$bannersResponse = $this->get('beaver.content')->getContentsByType(Manager::Type());
+		$bannersResponse    = $this->get('beaver.content')->getContentsByType(Manager::Type());
+		$clientsResponse    = $this->get('beaver.content')->getContentsByType(\App\Contents\Client\Manager::Type());
+		$aboutResponse      = $this->get('beaver.content')->search(\App\Contents\Text\Manager::Type(), [
+			'type'  => 'about'
+		]);
 		
 		return $this->render('home.html.twig', [
 			'banners'   => $bannersResponse->getData(),
+			'clients'   => $clientsResponse->getData(),
+			'about'     => $aboutResponse->getData(),
 			'portfolio' => $this->get('contents')->portfolio()
 		]);
 	}

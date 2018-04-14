@@ -1,18 +1,19 @@
-<div class="r-content content-fluid">
-    <div class="title">
-        <h1>Ink Studio Company</h1>
-    </div>
-
-    <div class="grid_12 m_grid_4">
-        <div class="iam">
-            <img src="{{ asset('images/me.jpg') }}" alt="Leonardo Julián Suárez Amézquita" />
+{% if about is not empty %}
+    {% set content = about | first %}
+    <div class="r-content content-fluid">
+        <div class="title">
+            <h1>Ink Studio Company</h1>
         </div>
+
+        <div class="grid_12 m_grid_4">
+            <div class="iam">
+                <img src="{{ asset('images/me.jpg') }}" alt="Leonardo Julián Suárez Amézquita" />
+            </div>
+        </div>
+        <div class="grid_1 no-tablet no-mobile">&nbsp;</div>
+        <div class="grid_10 t_grid_8 m_grid_4">
+            {{ content.text | raw }}
+        </div>
+        <div class="grid_1 no-tablet no-mobile">&nbsp;</div>
     </div>
-    <div class="grid_1 no-tablet no-mobile">&nbsp;</div>
-    <div class="grid_10 t_grid_8 m_grid_4">
-        <p>
-            Ink Studio Company es la fusión de dos campos a simple vista opuestos, la tecnología y el arte, impulsados por el interés y pasión hacia ellas, nace en el mes de abril de 2009 este startup freelance con un objetivo claro, crear experiencias de usuario únicas e inyectar los tintes del arte y diseño en cada uno de nuestros proyectos.
-        </p>
-    </div>
-    <div class="grid_1 no-tablet no-mobile">&nbsp;</div>
-</div>
+{% endif %}

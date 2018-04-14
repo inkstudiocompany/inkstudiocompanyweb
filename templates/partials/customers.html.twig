@@ -7,18 +7,11 @@
     <div class="grid_1 no-mobile">&nbsp;</div>
     <div class="grid_10 m_grid_4">
         <ul class="grid_12 m_grid_4">
-            <li class="grid_3 m_grid_2">
-                <img src="images/customers/iprofesional.png" alt="iProfesional" />
-            </li>
-            <li class="grid_3 m_grid_2">
-                <img src="images/customers/laola.png" alt="La Ola Studio" />
-            </li>
-            <li class="grid_3 m_grid_2">
-                <img src="images/customers/museodecera.png" alt="Museo Histórico de Cera de La Boca, Buenos Aires - Argentina" />
-            </li>
-            <li class="grid_3 m_grid_2">
-                <img src="images/customers/odontojunior.png" alt="Consultorio Odontológico Odontojunior" />
-            </li>
+            {% for client in clients %}
+                <li class="grid_3 m_grid_2">
+                    <img src="{{ client.logotype }}" alt="{{ client.name }}" />
+                </li>
+            {% endfor %}
         </ul>
     </div>
     <div class="grid_1 no-mobile">&nbsp;</div>
