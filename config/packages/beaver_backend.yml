@@ -14,6 +14,8 @@ parameters:
 
     contents:
         - App\Contents\Banner\Manager
+        - App\Contents\Client\Manager
+        - App\Contents\Text\Manager
 
     beaver_blocks_directory:
         - { name: 'Ancho full', twig: 'Core/Blocks/full_block.html.twig' }
